@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<script language = "javascript">
+stageW = screen.availWidth;
+stageH = screen.availHeight;
+x = (stageW - 750)/2;
+y = (stageH - 800)/2;
+function openIT () {
+	mixer = window.open ("index.html","","fullscreen=1");
+	mixer.resizeTo (750,800);
+	mixer.moveTo (x,y);
+	self.close();
+}
+</script>
+</HEAD>
+
+<BODY onLoad="openIT();">
+
+</BODY>
+</HTML>
